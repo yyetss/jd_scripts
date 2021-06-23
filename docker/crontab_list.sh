@@ -97,4 +97,4 @@
 # 跳跳乐瓜分京豆
 15 0,12,22 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1
 #点点卷
-10 0,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
+10 0,14,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
