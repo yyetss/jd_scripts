@@ -75,13 +75,13 @@ if (process.env.cashinviteCode9) {
 if (process.env.cashinviteCode10) {
   cashinviteCode10 = process.env.cashinviteCode10;
 }
-if (process.env.cashinviteCode10) {
-  cashinviteCode11 = process.env.cashinviteCode10;
+if (process.env.cashinviteCode11) {
+  cashinviteCode11 = process.env.cashinviteCode11;
 }
-if (process.env.cashinviteCode10) {
-  cashinviteCode12 = process.env.cashinviteCode10;
+if (process.env.cashinviteCode12) {
+  cashinviteCode12 = process.env.cashinviteCode12;
 }
-newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`}] //这里修改你的邀请码
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`}] //这里修改你的邀请码
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
