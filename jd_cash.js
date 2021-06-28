@@ -45,6 +45,8 @@ let cashinviteCode9 = 'eU9YObDlP456uz2ojhlA';
 let cashinviteCode10 = 'eU9YDr_pE71aox-BuAlz';
 let cashinviteCode11 = '9pSEu103v1aPKMlR';
 let cashinviteCode12 = 'eU9Ya7nnNfR3p2mAnnRG3w';
+let cashinviteCode13 = 'eU9YJLvaFaVRpyyusAtO';
+let cashinviteCode14 = 'ZEE2b--7bvgg9G7SzA';
 if (process.env.cashinviteCode) {
   cashinviteCode = process.env.cashinviteCode;
 }
@@ -81,7 +83,13 @@ if (process.env.cashinviteCode11) {
 if (process.env.cashinviteCode12) {
   cashinviteCode12 = process.env.cashinviteCode12;
 }
-newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`}] //这里修改你的邀请码
+if (process.env.cashinviteCode13) {
+  cashinviteCode13 = process.env.cashinviteCode13;
+}
+if (process.env.cashinviteCode14) {
+  cashinviteCode14 = process.env.cashinviteCode14;
+}
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`},{"inviteCode":`${cashinviteCode13}`},{"inviteCode":`${cashinviteCode14}`}] //这里修改你的邀请码
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
