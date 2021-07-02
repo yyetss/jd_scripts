@@ -89,7 +89,5 @@
 10 10,23 * * * node /scripts/jd_market_lottery.js >> /scripts/logs/jd_market_lottery.log 2>&1
 # 领金贴
 5 0 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
-# 跳跳乐瓜分京豆
-15 0,12,22 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1
 #点点卷
 10 0,14,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
