@@ -55,6 +55,8 @@ let cashinviteCode19 = 'eU9YaOnjZfUjoG7SmSEbhw';
 let cashinviteCode20 = 'eU9YNbPXEb5smC-Nnypg';
 let cashinviteCode21 = 'eU9YaOjhYf4v8m7dnnBF1Q';
 let cashinviteCode22 = 'eU9Ya762N_h3oG_RmXoQ0A';
+let cashinviteCode23 = '-raeul4isE62mA';
+let cashinviteCode24 = '-5SMcTkk1Q';
 if (process.env.cashinviteCode) {
   cashinviteCode = process.env.cashinviteCode;
 }
@@ -121,7 +123,13 @@ if (process.env.cashinviteCode21) {
 if (process.env.cashinviteCode22) {
   cashinviteCode22 = process.env.cashinviteCode22;
 }
-newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`},{"inviteCode":`${cashinviteCode13}`},{"inviteCode":`${cashinviteCode14}`},{"inviteCode":`${cashinviteCode15}`},{"inviteCode":`${cashinviteCode16}`},{"inviteCode":`${cashinviteCode17}`},{"inviteCode":`${cashinviteCode18}`},{"inviteCode":`${cashinviteCode19}`},{"inviteCode":`${cashinviteCode20}`},{"inviteCode":`${cashinviteCode21}`},{"inviteCode":`${cashinviteCode22}`}] //这里修改你的邀请码
+if (process.env.cashinviteCode23) {
+  cashinviteCode23 = process.env.cashinviteCode23;
+}
+if (process.env.cashinviteCode24) {
+  cashinviteCode24 = process.env.cashinviteCode24;
+}
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`},{"inviteCode":`${cashinviteCode13}`},{"inviteCode":`${cashinviteCode14}`},{"inviteCode":`${cashinviteCode15}`},{"inviteCode":`${cashinviteCode16}`},{"inviteCode":`${cashinviteCode17}`},{"inviteCode":`${cashinviteCode18}`},{"inviteCode":`${cashinviteCode19}`},{"inviteCode":`${cashinviteCode20}`},{"inviteCode":`${cashinviteCode21}`},{"inviteCode":`${cashinviteCode22}`},{"inviteCode":`${cashinviteCode23}`},{"inviteCode":`${cashinviteCode24}`}] //这里修改你的邀请码
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
