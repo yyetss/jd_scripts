@@ -35,9 +35,7 @@ $.ShInviteList = [
 
 ];
 $.innerShInviteList = [
-'H8mphLbwLmjwJfbba4ZCgiaLDFvY68E',
-'H8mphLbwLl__KdroS55gq9ypAux2gbQ',
-'H8mphLbwLg2iKNeTH9c73qHtNjgNH9iD',
+
 ];
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -90,8 +88,8 @@ const UA = $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT :
   }
   // 助力
   let res = [], res2 = [];
-  $.innerShInviteList = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/smiek2221/scripts/master/summer_movement_one.json');
-  res2 = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/smiek2221/scripts/master/summer_movement.json');
+  $.innerShInviteList = await getAuthorShareCode('');
+  res2 = await getAuthorShareCode('');
   if (ShHelpAuthorFlag) {
     $.ShInviteLists = []
     $.innerShInviteLists = getRandomArrayElements([...res, ...res2], [...res, ...res2].length);
