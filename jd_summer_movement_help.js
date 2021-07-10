@@ -29,14 +29,14 @@ let cookiesArr = [];
 $.cookie = '';
 $.secretpInfo = {};
 $.ShInviteList = [
-'H8mphLbwLgymedKYEtYyhy1KT6_2RHGG',
-'H8mphLbwLgzwd9CYRNUxgv2_gHBVLgH1',
-'H8mphLbwLmDWB9jLcLFOnN_MFOSh6tI'
+'H8mphLbwLmjwJfbba4ZCgiaLDFvY68E',
+'H8mphLbwLl__KdroS55gq9ypAux2gbQ',
+'H8mphLbwLg2iKNeTH9c73qHtNjgNH9iD',
 ];
 $.innerShInviteList = [
-'H8mphLbwLgymedKYEtYyhy1KT6_2RHGG',
-'H8mphLbwLgzwd9CYRNUxgv2_gHBVLgH1',
-'H8mphLbwLmDWB9jLcLFOnN_MFOSh6tI'
+'H8mphLbwLmjwJfbba4ZCgiaLDFvY68E',
+'H8mphLbwLl__KdroS55gq9ypAux2gbQ',
+'H8mphLbwLg2iKNeTH9c73qHtNjgNH9iD',
 ];
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
