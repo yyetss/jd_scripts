@@ -14,10 +14,10 @@
 9 1-23/1 * * * node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
 #千元红包助力
 10 9-19 * * * node /scripts/jd_summer_movement_help.js >> /scripts/logs/jd_summer_movement_help.log 2>&1
-
 #京享值pk
-10 0,2 * * * node /scripts/jd_jxzpk.js >> /scripts/logs/jd_jxzpk.js 2>&1
-
+10 0,2 * * * node /scripts/jd_jxzpk.js >> /scripts/logs/jd_jxzpk.log 2>&1
+#愤怒的锦鲤
+0 0 * * * node /scripts/jd_angryKoi.js >> /scripts/logs/jd_angryKoi.log 2>&1
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
