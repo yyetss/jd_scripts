@@ -33,8 +33,8 @@ let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭�
 let cookiesArr = [], cookie = '', message;
 let helpAuthor = true;
 const randomCount = $.isNode() ? 20 : 5;
-let cashinviteCode = 'eU9Yaum1N_4j82-EzCUSgw';
-let cashinviteCode2 = 'eU9Yar-7Nf518GyBniIWhw';
+let cashinviteCode = 'eU9Yaum1N_4j82-EzCUSgw'; 
+let cashinviteCode2 = 'eU9Yar-7Nf518GyBniIWhw'; 
 let cashinviteCode3 = 'eU9YBpnLPa1BlBOfqAZK';
 let cashinviteCode4 = 'eU9YMZnqGZReogupmS1q';
 let cashinviteCode5 = 'eU9YNrnAPZlYoieXiStU';
@@ -45,18 +45,16 @@ let cashinviteCode9 = 'eU9YObDlP456uz2ojhlA';
 let cashinviteCode10 = 'eU9YDr_pE71aox-BuAlz';
 let cashinviteCode11 = '9pSEu103v1aPKMlR';
 let cashinviteCode12 = 'eU9Ya7nnNfR3p2mAnnRG3w';
-let cashinviteCode13 = 'eU9YJLvaFaVRpyyusAtO';
-let cashinviteCode14 = 'ZEE2b--7bvgg9G7SzA';
-let cashinviteCode15 = 'eU9YCKzPIqp9pwaEljpP';
-let cashinviteCode16 = 'eU9YPbrPN4J0mDyVqRZX';
-let cashinviteCode17 = 'eU9YGLHbOZVejBuxsQ92';
-let cashinviteCode18 = 'eU9YDojQMrtQmASdtyhM';
-let cashinviteCode19 = 'eU9YaOnjZfUjoG7SmSEbhw';
-let cashinviteCode20 = 'eU9YNbPXEb5smC-Nnypg';
-let cashinviteCode21 = 'eU9YaOjhYf4v8m7dnnBF1Q';
-let cashinviteCode22 = 'eU9Ya762N_h3oG_RmXoQ0A';
-let cashinviteCode23 = 'IhgyaeS6Yvwh9G-6iw';  //xiao zheng
-let cashinviteCode24 = '-5SMcTkk1Q';
+let cashinviteCode13 = 'eU9YF6n7Pb53rAaOoxBl'; //亚娟
+let cashinviteCode14 = 'eU9YauizN68gpW2ByidC1g'; //老范
+let cashinviteCode15 = 'eU9YaL26b6km9GmDz3sagg'; //二娃
+let cashinviteCode16 = 'IhgyaeS6Yvwh9G-6iw';  //xiao zheng
+let cashinviteCode17 = '-5SMcTkk1Q'; //王慧
+let cashinviteCode18 = 'eU9YDojQMrtQmASdtyhM'; //海文
+let cashinviteCode19 = 'eU9YaOnjZfUjoG7SmSEbhw'; // #社区
+let cashinviteCode20 = 'eU9YNbPXEb5smC-Nnypg'; //老黄
+let cashinviteCode21 = 'eU9YaOjhYf4v8m7dnnBF1Q'; //阳光
+let cashinviteCode22 = 'eU9Ya762N_h3oG_RmXoQ0A'; //阳光
 if (process.env.cashinviteCode) {
   cashinviteCode = process.env.cashinviteCode;
 }
@@ -123,13 +121,7 @@ if (process.env.cashinviteCode21) {
 if (process.env.cashinviteCode22) {
   cashinviteCode22 = process.env.cashinviteCode22;
 }
-if (process.env.cashinviteCode23) {
-  cashinviteCode23 = process.env.cashinviteCode23;
-}
-if (process.env.cashinviteCode24) {
-  cashinviteCode24 = process.env.cashinviteCode24;
-}
-newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`},{"inviteCode":`${cashinviteCode13}`},{"inviteCode":`${cashinviteCode14}`},{"inviteCode":`${cashinviteCode15}`},{"inviteCode":`${cashinviteCode16}`},{"inviteCode":`${cashinviteCode17}`},{"inviteCode":`${cashinviteCode18}`},{"inviteCode":`${cashinviteCode19}`},{"inviteCode":`${cashinviteCode20}`},{"inviteCode":`${cashinviteCode21}`},{"inviteCode":`${cashinviteCode22}`},{"inviteCode":`${cashinviteCode23}`},{"inviteCode":`${cashinviteCode24}`}] //这里修改你的邀请码
+newShareCodes = [{"inviteCode":`${cashinviteCode}`},{"inviteCode":`${cashinviteCode2}`},{"inviteCode":`${cashinviteCode3}`},{"inviteCode":`${cashinviteCode4}`},{"inviteCode":`${cashinviteCode5}`},{"inviteCode":`${cashinviteCode6}`},{"inviteCode":`${cashinviteCode7}`},{"inviteCode":`${cashinviteCode8}`},{"inviteCode":`${cashinviteCode9}`},{"inviteCode":`${cashinviteCode10}`},{"inviteCode":`${cashinviteCode11}`},{"inviteCode":`${cashinviteCode12}`},{"inviteCode":`${cashinviteCode13}`},{"inviteCode":`${cashinviteCode14}`},{"inviteCode":`${cashinviteCode15}`},{"inviteCode":`${cashinviteCode16}`},{"inviteCode":`${cashinviteCode17}`},{"inviteCode":`${cashinviteCode18}`},{"inviteCode":`${cashinviteCode19}`},{"inviteCode":`${cashinviteCode20}`},{"inviteCode":`${cashinviteCode21}`},{"inviteCode":`${cashinviteCode22}`}] //这里修改你的邀请码
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
