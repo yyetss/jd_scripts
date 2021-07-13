@@ -50,9 +50,9 @@ let cashinviteCode14 = 'eU9YauizN68gpW2ByidC1g'; //老范
 let cashinviteCode15 = 'eU9YaL26b6km9GmDz3sagg'; //二娃
 let cashinviteCode16 = 'IhgyaeS6Yvwh9G-6iw';  //xiao zheng
 let cashinviteCode17 = '-5SMcTkk1Q'; //王慧
-let cashinviteCode18 = 'eU9YDojQMrtQmASdtyhM'; //海文
-let cashinviteCode19 = 'eU9YaOnjZfUjoG7SmSEbhw'; // #社区
-let cashinviteCode20 = 'eU9YNbPXEb5smC-Nnypg'; //老黄
+let cashinviteCode18 = 'eU9YP63LEahGozCQnzRF'; //临亚老张
+let cashinviteCode19 = 'eU9YBrflPrRnuwe_lw5T'; // #老方
+let cashinviteCode20 = 'eU9YL5fUPKp6jwSJvgla'; //左
 let cashinviteCode21 = 'eU9YaOjhYf4v8m7dnnBF1Q'; //阳光
 let cashinviteCode22 = 'eU9Ya762N_h3oG_RmXoQ0A'; //阳光
 if (process.env.cashinviteCode) {
