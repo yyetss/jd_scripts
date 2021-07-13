@@ -89,3 +89,7 @@
 5 0 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
 #点点卷
 10 0,14,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
+#新财富岛
+1 * * * * * * * node /scripts/jd_cfd.js >> /scripts/logs/jd_cfd.log 2>&1
+#财富岛气球
+*/20 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
