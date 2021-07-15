@@ -9,8 +9,6 @@
 
 #5G超级盲盒(活动时间：2021-06-2到2021-07-31)
 0 0-23/4 * * * node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1
-#愤怒的锦鲤
-0 0 * * * node /scripts/jd_angryKoi.js >> /scripts/logs/jd_angryKoi.log 2>&1
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -76,8 +74,6 @@
 10 10,23 * * * node /scripts/jd_market_lottery.js >> /scripts/logs/jd_market_lottery.log 2>&1
 # 领金贴
 5 0 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
-#点点卷
-10 0,14,20 * * * node /scripts/jd_necklace.js >> /scripts/logs/jd_necklace.log 2>&1
 #新财富岛
 1 * * * * node /scripts/jd_cfd.js >> /scripts/logs/jd_cfd.log 2>&1
 
