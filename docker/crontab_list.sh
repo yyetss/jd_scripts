@@ -92,3 +92,5 @@
 1 * * * * node /scripts/jd_cfd.js >> /scripts/logs/jd_cfd.log 2>&1
 #天天加速
 11 0-23/3 * * * node /scripts/jd_speed.js >> /scripts/logs/jd_speed.log 2>&1
+#送豆得豆
+17 4 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
