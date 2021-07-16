@@ -72,6 +72,5 @@
 10 10,23 * * * node /scripts/jd_market_lottery.js >> /scripts/logs/jd_market_lottery.log 2>&1
 # 领金贴
 5 0 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
-#新财富岛
-1 * * * * node /scripts/jd_cfd.js >> /scripts/logs/jd_cfd.log 2>&1
+
 
