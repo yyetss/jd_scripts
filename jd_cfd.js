@@ -106,7 +106,7 @@ async function run() {
     $.Biztask = []
     $.Aggrtask = []
     $.Employtask = []
-
+    
     await GetHomePageInfo()
     if($.HomeInfo){
       $.InviteList.push($.HomeInfo.strMyShareId)
@@ -187,8 +187,12 @@ async function run() {
         // console.log(JSON.stringify(res))
 
       }else if($.HomeInfo.StoryInfo.StoryList[0].dwType == 2 && ( (res && res.iRet == 0) || res == '')){
+        if($.HomeInfo.StoryInfo.StoryList[0].dwStatus == 4){
+          additional = `&ptag=&strStoryId=${$.HomeInfo.StoryInfo.StoryList[0].strStoryId}&dwType=4&ddwTriggerDay=${$.HomeInfo.StoryInfo.StoryList[0].ddwTriggerDay}`
+        }else{
+          additional = `&ptag=&strStoryId=${$.HomeInfo.StoryInfo.StoryList[0].strStoryId}&dwType=2&ddwTriggerDay=${$.HomeInfo.StoryInfo.StoryList[0].ddwTriggerDay}`
+        }
         await $.wait(5000)
-        additional = `&ptag=&strStoryId=${$.HomeInfo.StoryInfo.StoryList[0].strStoryId}&dwType=2&ddwTriggerDay=${$.HomeInfo.StoryInfo.StoryList[0].ddwTriggerDay}`
         stk = `_cfd_t,bizCode,ddwTriggerDay,dwEnv,dwType,ptag,source,strStoryId,strZone`
         type = `MermaidOper`
         res = await taskGet(`story/${type}`, stk, additional)
@@ -196,6 +200,7 @@ async function run() {
         // console.log(JSON.stringify(res))
       }
     }
+    
     await $.wait(2000)
     console.log(`\n升级房屋、收集金币`)
     if($.buildList){
@@ -563,9 +568,12 @@ async function StoryInfo(){
 function printRes(res){
   if(res.iRet == 0 && res.Data){
     if(res.Data.ddwCoin || res.Data.ddwMoney){
-      console.log(`获得:${res.Data.ddwCoin && res.Data.ddwCoin+'金币' || ''} ${res.Data.ddwMoney && res.Data.ddwMoney+'财富' || ''}`)
+      console.log(`获得: ${res.Data.ddwCoin && res.Data.ddwCoin+'金币' || ''} ${res.Data.ddwMoney && res.Data.ddwMoney+'财富' || ''}`)
+    }else if(res.Data.Prize){
+      console.log(`获得: ${res.Data.Prize.strPrizeName && '优惠券 '+res.Data.Prize.strPrizeName || ''}`)
     }else{
-      console.log(`完成`)
+      console.log(`完成`, JSON.stringify(res))
+      // console.log(`完成`)
     }
   }else if(res && res.sErrMsg){
     console.log(res.sErrMsg)
